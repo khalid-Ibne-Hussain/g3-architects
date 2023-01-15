@@ -340,6 +340,37 @@ sponsor css
 }
 
 /* ------------------------------
+video content
+--------------------------------- */
+.video-container {
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.video-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-bottom: 100px; */
+}
+
+video {
+    border-radius: 20px;
+}
+
+.video-content ul>li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 30px;
+    color: #131313;
+    padding-top: 10px;
+}
+
+/* ------------------------------
 footer CSS
 ---------------------------------- */
 footer {
@@ -527,6 +558,25 @@ body {
     .sponsor-logo img {
         height: 60px;
         width: 150px;
+    }
+
+    /* video content */
+    .video-container {
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+
+    .video-content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .video-content ul>li {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
     }
 
     .contact-info {
