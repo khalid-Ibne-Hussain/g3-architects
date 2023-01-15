@@ -24,7 +24,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* height: 80px; */
     max-width: 1450px;
     margin: 0 auto;
     padding-top: 50px;
@@ -34,14 +33,12 @@ nav {
     color: #131313;
     font-weight: 700;
     font-size: 45px;
-    /* font-size: 2.8rem; */
-    /* font-size: 7vw; */
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 30px;
 
 }
 
@@ -75,9 +72,6 @@ nav ul>li {
 .btn {
     width: 180px;
     height: 64px;
-    /* font-weight: 400;
-    font-size: 16px; */
-
     background: #FF900E;
     border-radius: 8px;
     color: #FFFFFF;
@@ -92,7 +86,6 @@ nav ul>li {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .fluid-img {
@@ -103,9 +96,6 @@ nav ul>li {
 /* ***************************** features CSS  ***************************** */
 .features {
     padding: 85px 0;
-    /* max-width: 1440px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,8 +131,6 @@ nav ul>li {
 }
 
 #features-h3 {
-    /* font-weight: 700; */
-    /* font-size: 45px; */
     color: #FF900E;
 }
 
@@ -157,9 +145,6 @@ nav ul>li {
 
 .feature-love-enjoy {
     display: flex;
-    /* max-width: 1440px; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     align-items: center;
     justify-content: space-between;
 
@@ -213,10 +198,8 @@ nav ul>li {
 .feature-love-enjoy-img-container {
     width: 800px;
     height: 1059px;
-    /* border: 1px solid red; */
-    display: grid;
+    /* display: grid; */
     position: relative;
-
 }
 
 .feature-love-enjoy-img-container img {
@@ -236,11 +219,11 @@ nav ul>li {
     justify-content: center;
     background: #FF900E;
     border-radius: 8px;
-    /* text-align: center; */
     color: #FFFFFF;
     position: absolute;
     bottom: 0;
     left: 0;
+    /* flex-wrap: wrap; */
 }
 
 .exp-10year h1 {
@@ -264,7 +247,6 @@ nav ul>li {
 .some-facts {
     width: 542px;
     padding-top: 100px;
-
 }
 
 .some-facts h3 {
@@ -284,8 +266,6 @@ nav ul>li {
 counts of achievements 
 ----------------------------*/
 .counts-of-achievements {
-    /* max-width: 1440px; */
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px;
@@ -323,8 +303,6 @@ counts of achievements
 sponsor css
 ----------------------------- */
 .sponsor-container {
-    /* max-width: 1440px; */
-    /* margin: 0 auto; */
     padding-top: 100px;
 
 }
@@ -355,19 +333,19 @@ sponsor css
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .sponsor-logo img {
     filter: grayscale(100%);
+    /* position: absolute; */
+    /* animation: lineH 5s 1s infinite linear; */
 }
 
 /* ------------------------------
 footer CSS
 ---------------------------------- */
 footer {
-    /* max-width: 1440px; */
-    /* max-height: 100px; */
-    /* margin: 0 auto; */
     background: #FFF4E7;
     border-radius: 8px;
     padding: 40px 0;
@@ -395,13 +373,13 @@ footer {
 
 }
 
-.footer-container {
+.footer-copyright {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-container p {
+.footer-copyright p {
     color: #424242;
     font-weight: 400;
     font-size: 20px;
@@ -410,14 +388,14 @@ footer {
 }
 
 body {
-    padding-bottom: 220px;
+    padding-bottom: 200px;
 }
 
-/*-----------------------------------------
--------------------------------------------
- media query                       responsive for mobile device(576px)
- ------------------------------------------
------------------------------------------ */
+/*-----------------------------------------------
+-------------------------------------------------
+ media query  responsive for mobile device(576px)
+ ------------------------------------------------
+---------------------------------------------- */
 @media screen and (max-width:576px) {
 
     nav,
@@ -473,18 +451,23 @@ body {
         font-size: 38px;
     }
 
-    .feature-love-enjoy-articles p {
-        /* padding-left: 20px; */
-        /* padding-bottom: 20px; */
+    #f-l-e-article {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .feature-love-enjoy-img-container {
-        width: 560px;
+        /* width: 570px; */
         /* height: 800px; */
         /* border: 1px solid red; */
-        display: grid;
+        /* display: grid; */
         position: relative;
+        /* overflow: hidden; */
+        /* display: none; */
+    }
 
+    .feature-love-enjoy-img-container {
+        width: 100%;
     }
 
     .exp-10year {
@@ -532,8 +515,6 @@ body {
         flex-direction: column;
         row-gap: 50px;
         align-items: center;
-
-
     }
 
     .sponsor-logo img {
@@ -545,10 +526,9 @@ body {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
-
     }
 
-    .footer-container {
+    .footer-copyright {
         text-align: center;
     }
 
