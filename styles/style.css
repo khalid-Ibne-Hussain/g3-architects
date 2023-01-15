@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* background: red; */
     font-family: 'Work Sans', sans-serif;
 }
@@ -239,10 +240,6 @@ nav ul>li {
 /* ---------------------------
  some facts CSS
 ------------------------------ */
-.some-facts-container {
-    width: 1440px;
-    margin: 0 auto;
-}
 
 .some-facts {
     width: 542px;
@@ -397,6 +394,12 @@ body {
  ------------------------------------------------
 ---------------------------------------------- */
 @media screen and (max-width:576px) {
+
+    html,
+    body {
+        width: 576px;
+        height: 100%;
+    }
 
     nav,
     nav ul {
