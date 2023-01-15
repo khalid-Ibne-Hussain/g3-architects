@@ -6,11 +6,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1250px;
-} */
 main,
 footer {
     max-width: 1440px;
@@ -49,7 +44,9 @@ nav ul>li {
     color: #424242;
 }
 
-/* ***************************** banner txt ***************************** */
+/* ***************************** 
+banner txt 
+***************************** */
 .txt {
     max-width: 862px;
     text-align: center;
@@ -81,7 +78,9 @@ nav ul>li {
     border: none;
 }
 
-/* ***************************** banner img ***************************** */
+/* ***************************** 
+banner img 
+***************************** */
 .banner-img {
     padding: 50px 0;
     max-width: 1440px;
@@ -94,7 +93,9 @@ nav ul>li {
     height: auto;
 }
 
-/* ***************************** features CSS  ***************************** */
+/* ***************************** 
+features CSS  
+***************************** */
 .features {
     padding: 85px 0;
     display: flex;
@@ -142,7 +143,9 @@ nav ul>li {
     padding: 24px 0 32px 0;
 }
 
-/* ***************************** feature you will love & enjoy ***************************** */
+/* ***************************** 
+feature you will love & enjoy 
+***************************** */
 
 .feature-love-enjoy {
     display: flex;
@@ -476,6 +479,9 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* ------------------------------
+ feature love & enjoy
+--------------------------------- */
     .vl {
         height: 50px;
     }
@@ -495,13 +501,7 @@ body {
     }
 
     .feature-love-enjoy-img-container {
-        /* width: 570px; */
-        /* height: 800px; */
-        /* border: 1px solid red; */
-        /* display: grid; */
         position: relative;
-        /* overflow: hidden; */
-        /* display: none; */
     }
 
     .feature-love-enjoy-img-container {
@@ -510,8 +510,6 @@ body {
 
     .exp-10year {
         position: absolute;
-        /* bottom: 0; */
-        /* top: 0; */
         margin-left: 155px;
         width: 250px;
         height: 150px;
@@ -527,6 +525,9 @@ body {
         font-size: 20px;
     }
 
+    /* ----------------------------------
+some facts
+-------------------------------------- */
     .some-facts {
         text-align: center;
         padding-left: 20px;
@@ -538,12 +539,18 @@ body {
         font-size: 38px;
     }
 
+    /* ------------------------------
+achievements awards, projects, clients
+----------------------------------- */
     .counts-of-achievements {
         flex-direction: column;
         row-gap: 25px;
         align-items: center;
     }
 
+    /* ----------------------------
+sponsor
+-------------------------------- */
     .sponsor-txt h3 {
         font-weight: 600;
         font-size: 38px;
@@ -560,7 +567,9 @@ body {
         width: 150px;
     }
 
-    /* video content */
+    /* ---------------------
+    video content 
+    ------------------------*/
     .video-container {
         text-align: center;
         font-weight: 600;
@@ -579,6 +588,9 @@ body {
         font-size: 20px;
     }
 
+    /* -----------------------------
+footer
+--------------------------------- */
     .contact-info {
         flex-direction: column;
         align-items: center;
