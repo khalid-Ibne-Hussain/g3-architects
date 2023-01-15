@@ -30,9 +30,9 @@ nav {
     padding-top: 50px;
 }
 
-.container h1 {
+.container h3 {
     color: #131313;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 45px;
     /* font-size: 2.8rem; */
     /* font-size: 7vw; */
@@ -45,7 +45,7 @@ nav ul {
 
 }
 
-li {
+nav ul>li {
     font-weight: 500;
     font-size: 18px;
     color: #424242;
@@ -153,7 +153,7 @@ li {
     padding: 24px 0 32px 0;
 }
 
-/* ***************************** feature you will love 7 enjoy ***************************** */
+/* ***************************** feature you will love & enjoy ***************************** */
 
 .feature-love-enjoy {
     display: flex;
@@ -225,8 +225,6 @@ li {
     position: absolute;
     top: 0;
     right: 0;
-
-
 }
 
 .exp-10year {
@@ -301,7 +299,6 @@ counts of achievements
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transform: rotate(90deg); */
     text-align: center;
     transition: all 1s ease-in-out;
 }
@@ -414,4 +411,149 @@ footer {
 
 body {
     padding-bottom: 220px;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+ media query                       responsive for mobile device(576px)
+ ------------------------------------------
+----------------------------------------- */
+@media screen and (max-width:576px) {
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        row-gap: 25px;
+        text-align: center;
+    }
+
+
+    .container h3 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .txt {
+        padding-top: 50px;
+    }
+
+    .txt h1 {
+        font-weight: 600;
+        font-size: 45px;
+    }
+
+    .txt p {
+        padding: 32px 20px;
+    }
+
+    .btn {
+        width: 160px;
+        height: 55px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .feature-txt button {
+        margin-bottom: 20px;
+    }
+
+    .feature-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-love-enjoy {
+        flex-direction: column;
+    }
+
+    .feature-love-enjoy-articles h2 {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    .feature-love-enjoy-articles p {
+        /* padding-left: 20px; */
+        /* padding-bottom: 20px; */
+    }
+
+    .feature-love-enjoy-img-container {
+        width: 560px;
+        /* height: 800px; */
+        /* border: 1px solid red; */
+        display: grid;
+        position: relative;
+
+    }
+
+    .exp-10year {
+        position: absolute;
+        /* bottom: 0; */
+        /* top: 0; */
+        margin-left: 155px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .exp-10year h1 {
+        font-weight: 600;
+        font-size: 45px;
+    }
+
+    .exp-10year p {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .some-facts {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .some-facts h3 {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    .counts-of-achievements {
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: center;
+    }
+
+    .sponsor-txt h3 {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    .sponsor-logo {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+
+
+    }
+
+    .sponsor-logo img {
+        height: 70px;
+        width: 200px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+
 }
